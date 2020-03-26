@@ -1,12 +1,17 @@
 
-public class Vendeur extends CalculeSalaire{
+public class Vendeur extends Employe{
 	
-	double commision;
+	double commission;
+	
+	public Vendeur(int année) {
+		super(année);
+		this.année = année;
+	}
+
 	
 	@Override
 	public double calculSalaire() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (salaireMensuel + (2020-année)*20) + commission;
 	}
 
 }
