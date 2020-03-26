@@ -8,12 +8,8 @@ public class Employe extends CalculeSalaire{
 
 	@Override
 	public double calculSalaire() {
-		// TODO Auto-generated method stub
-		return 0;
+		return salaireMensuel + annéeAnciennete*20;
 	}
 	
-	
-
-
 
 }
