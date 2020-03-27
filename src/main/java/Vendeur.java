@@ -3,9 +3,10 @@ public class Vendeur extends Employe{
 	
 	double commission;
 	
-	public Vendeur(int année) {
+	public Vendeur(int année, double commission) {
 		super(année);
 		this.année = année;
+		this.commission = commission;
 	}
 
 	
