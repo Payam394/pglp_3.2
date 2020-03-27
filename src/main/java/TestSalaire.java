@@ -1,28 +1,41 @@
 
-import java.util.ArrayList;
+
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 
 public class TestSalaire {
 	
 	@Test
-	public void TestSalaires () {
+	public void TestEmploye () {
+	
+		Employe e= new Employe(1996);
+
 		
+		//System.out.println(e1.calculSalaire());
+		assertEquals(e.calculSalaire(), 1980, 0);
 		
-		ArrayList<Employe> allEmployees = new ArrayList<Employe>();
+	}
+	
+	@Test
+	public void TestVendeur () {
+	
+		Vendeur v= new Vendeur(2000, 20);
+
 		
-		Employe e1= new Employe(1996);
-		Employe e2= new Employe(2004);
-		Vendeur v1 = new Vendeur(2005, 40);
-		Manager m1 = new Manager(2000);
+		//System.out.println(v.calculSalaire());
+		assertEquals(v.calculSalaire(), 1920, 0);
 		
-		allEmployees.add(e1);
-		allEmployees.add(e2);
-		allEmployees.add(v1);
-		allEmployees.add(m1);
+	}
+	
+	@Test
+	public void TestManager () {
+	
+		Manager m= new Manager(2001);
+
 		
-		
-		
+		//System.out.println(m.calculSalaire());
+		assertEquals(m.calculSalaire(), 3400, 0);
 		
 	}
 
